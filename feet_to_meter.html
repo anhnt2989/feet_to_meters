@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feet to meters</title>
+</head>
+<style>
+    .nd {
+        text-align: center;
+    }
+    p {
+        font-size: larger;
+    }
+
+</style>
+<div class="nd">
+
+    <p>Chuyển đổi từ Feet sang Meters :</p>
+    <input type="number" placeholder="Nhập số feet ở đây!" oninput="feetToMeters(this.value);">
+    <br><br>
+    Số foot (feet) đã nhập ở trên =<br>
+    <p id="result"></p>
+    <br><br>
+    <br><br>
+    <p>Chuyển đổi từ Meters sang Feet :</p>
+    <input type="number" placeholder="Nhập số meters ở đây!" oninput="metersToFeet(this.value);">
+    <br><br>
+    Số meter(s) đã nhập ở trên = <br>
+    <p id="result1"></p>
+
+</div>
+<body>
+            <script>
+                function feetToMeters(x) {
+                    document.getElementById("result").innerHTML = x * 0.305 + " meter(s)";
+                }
+                function metersToFeet(x) {
+                    document.getElementById("result1").innerHTML = x * 3.279 + " feet";
+                }
+            </script>
+</body>
+</html>
